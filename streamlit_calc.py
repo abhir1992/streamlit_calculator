@@ -23,8 +23,8 @@ if 'api_response' not in st.session_state:
     st.session_state.api_response = None
 
 # Display the calculator screen
-# st.text_input("Calculator Display", value=st.session_state.display, key="display_field", disabled=True)
-st.text_input("Calculator Display", key="display_field", disabled=True)
+st.text_input("Calculator Display", value=st.session_state.display, key="display_field", disabled=True)
+# st.text_input("Calculator Display", key="display_field", disabled=True)
 
 # Function to handle number button clicks
 def number_click(number):
